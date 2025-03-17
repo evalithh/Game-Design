@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!49 &4900000
+TextAsset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mbs-pack-descriptor
+  m_Script: "{\n    \"guid\": \"127435a892ca414cb4fbfd9615ccff21\",\n    \"_name\":
+    \"Custom Pack\",\n    \"_wallGroups\": [\n        {\n            \"guid\": \"1e8294554623472d95177e2b33b56ef1\",\n           
+    \"name\": \"01\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"9889a64013ce4beda9d79664f27e44b3\",\n                    \"name\":
+    \"wall_module_01\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 919132149155446097,\n                           
+    \"guid\": \"c6f69f8849655354db8b9cb25a321f31\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        }\n    ],\n    \"_floorGroups\": [\n        {\n           
+    \"guid\": \"a46cb80035744595906cd8f86fe48f4c\",\n            \"name\": \"Custom_floor\",\n           
+    \"_modules\": [\n                {\n                    \"guid\": \"337633851d9247cdb58abd2a85ab5160\",\n                   
+    \"name\": \"New Floor Module\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 4908351553809621268,\n                           
+    \"guid\": \"cbc645823a76af44181e6ca24be251f6\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        }\n    ],\n    \"_decoratorGroups\": [],\n    \"_decoratorCategories\":
+    [\n        {\n            \"guid\": \"cb78a13d42dc40f1abc35596231fe46d\",\n           
+    \"_name\": \"All\"\n        }\n    ]\n}"
