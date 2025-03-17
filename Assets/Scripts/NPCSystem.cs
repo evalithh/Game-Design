@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class NPCSystem : MonoBehaviour
 {
+    public GameObject textToShow;
     bool player_detection = false;
 
     void Update()
     {
         if(player_detection && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("work");
+            textToShow.SetActive(true);
         }
     }
 
@@ -25,5 +26,6 @@ public class NPCSystem : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         player_detection = false;
+        textToShow.SetActive(false);
     }
 }
