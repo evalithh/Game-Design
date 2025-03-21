@@ -79,13 +79,15 @@ private void StateHandler()
    {
       state = MovementState.sprinting;
       moveSpeed = sprintSpeed;
+            stepEvent.setParameterByName("Sprint", 1);
    }
 
    else if (grounded)
    {
       state = MovementState.walking;
       moveSpeed = walkSpeed;
-   }
+            stepEvent.setParameterByName("Sprint", 0);
+        }
 }
    private void MovePlayer()
    {
