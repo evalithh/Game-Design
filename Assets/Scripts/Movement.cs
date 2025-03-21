@@ -28,6 +28,9 @@ public class Movement : MonoBehaviour
 
    Rigidbody rb;
 
+    [SerializeField] FMODUnity.EventReference step;
+    [SerializeField] FMOD.Studio.EventInstance stepEvent;
+
 public MovementState state;
 
    public enum MovementState
@@ -40,6 +43,7 @@ private void Start()
    {
     rb = GetComponent<Rigidbody>();
     rb.freezeRotation = true;
+       stepEvent = AudioManager.Instance.PlayLoop(step, transform.position, gameObject);
    }
 
    private void Update()
@@ -53,11 +57,13 @@ private void Start()
         rb.drag = groundDrag;
         else
         rb.drag = 0;
+
    }
 
    private void FixedUpdate()
    {
     MovePlayer();
+
    }
    private void MyInput()
    {

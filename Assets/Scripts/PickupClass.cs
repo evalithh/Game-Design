@@ -12,6 +12,9 @@ public class PickupClass : MonoBehaviour
         
         private Rigidbody CurrentObjectRigidBody;
         private Collider CurrentObjectCollider;
+
+    [SerializeField] FMODUnity.EventReference grab;
+    [SerializeField] FMODUnity.EventReference ungrab;
     
 
     void Update()
@@ -32,6 +35,8 @@ public class PickupClass : MonoBehaviour
 
                 CurrentObjectRigidBody.isKinematic = true;
                 CurrentObjectCollider.enabled = false;
+                    AudioManager.Instance.PlaySFX(grab, transform.position);
+
             }
             else
             {
@@ -40,7 +45,8 @@ public class PickupClass : MonoBehaviour
 
                 CurrentObjectRigidBody.isKinematic = true;
                 CurrentObjectCollider.enabled = false;
-            }
+                    AudioManager.Instance.PlaySFX(ungrab, transform.position);
+                }
             }
         }
         
