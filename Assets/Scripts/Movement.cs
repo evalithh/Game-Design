@@ -57,6 +57,8 @@ private void Start()
         rb.drag = groundDrag;
         else
         rb.drag = 0;
+        if (rb.velocity == Vector3.zero) stepEvent.setParameterByName("Volume", 0);
+        else stepEvent.setParameterByName("Volume", 1);
 
    }
 
